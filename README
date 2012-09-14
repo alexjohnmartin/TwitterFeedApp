@@ -1,0 +1,24 @@
+Overview
+Write a web application that gathers data from some twitter feeds, merges the feeds to a list, provides
+some simple aggregates, and then returns a response.
+
+Implementation
+1. Connect to the Twitter API (you will need a dev account for this)
+2. Get a list of all tweets from the last two weeks for the following three twitter accounts: 
+@pay_by_phone @PayByPhone @PayByPhone_UK
+3. Return the list in a json formatted response: sorted by time, with item data: twitter account, tweet,
+tweet date and time
+4. Provide the following aggregate information in the response as well:
+a. Total number of tweets per account for the two week period
+
+b. Total number of times another user was mentioned in tweets, per account for the two week period
+Requirements
+You are free to use any development environment, tools, and resources that you see fit. Your solution should, however, fulfill the following requirements:
+• Use C# and the .NET framework (which version is up to you)
+• Create a web application, using an MVC or REST framework
+• Provide a UAT test that exercises the result, as well as the original source code for both
+• Focus on SOLID, unit tests, and code organization
+
+
+
+http://search.twitter.com/search.json?q=%23paybyphone_uk%20%23paybyphone%20%23pay_by_phone
